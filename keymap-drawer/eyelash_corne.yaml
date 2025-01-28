@@ -34,7 +34,7 @@ layers:
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
   - {t: V, h: '$$mdi:apple-keyboard-shift$$'}
   - B
-  - MUTE
+  - $$mdi:volume-off$$
   - PgDn
   - N
   - {t: M, h: '$$mdi:apple-keyboard-shift$$'}
@@ -53,7 +53,7 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - '*'
+  - '}'
   - {t: /, s: '?'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - PRINTSCREEN
@@ -93,7 +93,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
   - {type: held}
-  - {t: '=', s: +}
+  - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F4
@@ -105,12 +105,12 @@ layers:
   - F5
   - F6
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - (
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
-  - (
-  - )
-  - KP MINUS
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '-', s: _}
   - F7
   - F8
   - F9
@@ -129,7 +129,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - NUBS
   - {t: \, s: '|'}
-  - '}'
+  - {t: ']', s: '}'}
   - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
