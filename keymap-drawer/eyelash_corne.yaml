@@ -19,9 +19,9 @@ layers:
   - D
   - F
   - G
-  - '&Ctrl_PgUp'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&Ctrl_PgDw'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - H
   - J
   - K
