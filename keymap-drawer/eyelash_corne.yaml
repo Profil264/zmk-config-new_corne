@@ -12,16 +12,16 @@ layers:
   - I
   - O
   - P
-  - '{'
+  - {t: '[', s: '{'}
   - $$mdi:keyboard-tab$$
   - A
   - S
   - D
   - F
   - G
+  - '&Ctrl_PgUp'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&Ctrl_PgDw'
   - H
   - J
   - K
@@ -54,7 +54,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - '}'
-  - {t: /, s: '?'}
+  - KP DIVIDE
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - PRINTSCREEN
   - SCROLLLOCK
@@ -66,8 +66,8 @@ layers:
   - '4'
   - {t: '5', s: '%'}
   - '6'
-  - +
-  - {t: '-', s: _}
+  - {t: ']', s: '}'}
+  - {t: /, s: '?'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -105,8 +105,8 @@ layers:
   - F5
   - F6
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '*'
   - (
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -127,10 +127,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - NUBS
-  - {t: \, s: '|'}
-  - {t: ']', s: '}'}
-  - {t: '=', s: +}
+  - {t: NUBS, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: \, h: '$$mdi:apple-keyboard-option$$', s: '|'}
+  - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
+  - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
