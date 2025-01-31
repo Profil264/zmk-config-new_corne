@@ -83,10 +83,10 @@
         default_layer {
             display-name = "Layer 0";
             bindings = <
-&kp ESCAPE           &kp Q            &kp W            &kp E      &kp R            &kp T                              &kp UP               &kp Y      &kp U               &kp I             &kp O               &kp P                &kp LBKT
-&kp ENTER            &kp A            &kp S            &kp D      &kp F            &kp G                    &kp LEFT  &none     &kp RIGHT  &kp H      &kp J               &kp K             &kp L               &kp SEMI             &kp SQT
-&HRM TAB LEFT_SHIFT  &HRM LEFT_GUI Z  &HRM LEFT_ALT X  &kp C      &kp V            &kp B      &kp C_MUTE              &kp DOWN             &kp N      &HRM RIGHT_SHIFT M  &HRM RCTRL COMMA  &HRM RIGHT_ALT DOT  &HRM RIGHT_GUI FSLH  &HRM BACKSPACE RIGHT_SHIFT
-                                                       &kp LCTRL  &lt 1 PAGE_DOWN  &kp SPACE                                               &kp SPACE  &lt 2 PAGE_UP       &lt 3 DELETE
+&kp ESCAPE           &kp Q            &kp W            &kp E      &kp R          &kp T                              &kp UP               &kp Y      &kp U               &kp I             &kp O               &kp P                &kp LBKT
+&kp ENTER            &kp A            &kp S            &kp D      &kp F          &kp G                    &kp LEFT  &none     &kp RIGHT  &kp H      &kp J               &kp K             &kp L               &kp SEMI             &kp SQT
+&HRM LEFT_SHIFT TAB  &HRM LEFT_GUI Z  &HRM LEFT_ALT X  &kp C      &kp V          &kp B      &kp C_MUTE              &kp DOWN             &kp N      &HRM RIGHT_SHIFT M  &HRM RCTRL COMMA  &HRM RIGHT_ALT DOT  &HRM RIGHT_GUI FSLH  &HRM RIGHT_SHIFT BACKSPACE
+                                                       &kp LCTRL  &lt 1 PAGE_UP  &kp SPACE                                               &kp SPACE  &lt 2 PAGE_UP       &lt 3 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
