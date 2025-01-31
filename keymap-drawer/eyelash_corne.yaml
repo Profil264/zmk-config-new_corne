@@ -46,7 +46,7 @@ layers:
   - {t: PgUp, h: Lower}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
-  - {t: PgUp, h: Upper}
+  - {t: PgDn, h: Upper}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Layer 3}
   Lower:
   - {t: '`', s: '~'}
