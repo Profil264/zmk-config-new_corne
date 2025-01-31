@@ -6,48 +6,48 @@ layers:
   - E
   - R
   - T
-  - PG UP
+  - $$mdi:arrow-up-bold$$
   - Y
   - U
   - I
   - O
   - P
   - {t: '[', s: '{'}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - A
   - S
   - D
   - F
   - G
+  - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-right-bold$$
   - H
   - J
   - K
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:keyboard-tab$$'}
   - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: B, h: '$$mdi:apple-keyboard-control$$'}
+  - C
+  - V
+  - B
   - $$mdi:volume-off$$
-  - PgDn
+  - $$mdi:arrow-down-bold$$
   - N
   - {t: M, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, h: RIGHT GUI, s: '?'}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:backspace$$'}
+  - $$mdi:apple-keyboard-control$$
+  - {t: PgDn, h: Lower}
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-space$$
+  - {t: PgUp, h: Upper}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Layer 3}
-  - Lower
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
-  - Upper
-  - F2
   Lower:
   - {t: '`', s: '~'}
   - {t: '7', s: '&'}
@@ -55,7 +55,7 @@ layers:
   - {t: '9', s: (}
   - '}'
   - KP DIVIDE
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
   - SCROLLLOCK
   - $$mdi:arrow-up-bold$$
@@ -68,9 +68,9 @@ layers:
   - '6'
   - {t: ']', s: '}'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - PAUSE
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -84,9 +84,9 @@ layers:
   - {t: ',', s: <}
   - .
   - $$mdi:volume-off$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - RIGHT GUI
@@ -95,7 +95,7 @@ layers:
   - {type: held}
   - )
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F2
   - F4
   Upper:
   - F1
@@ -129,13 +129,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: NUBS, h: '$$mdi:apple-keyboard-command$$'}
   - {t: \, h: '$$mdi:apple-keyboard-option$$', s: '|'}
-  - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
-  - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
+  - {t: ']', s: '}'}
+  - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - RIGHT GUI
@@ -189,9 +189,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
