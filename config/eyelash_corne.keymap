@@ -39,10 +39,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <29 30 31 32 37 38 39 40>;
+            hold-trigger-key-positions = <29 30 31 38 39 40 28 41>;
             hold-trigger-on-release;
         };
     };
@@ -83,10 +82,10 @@
         default_layer {
             display-name = "Layer 0";
             bindings = <
-&kp ESCAPE           &kp Q            &kp W            &kp E      &kp R          &kp T                              &kp UP               &kp Y      &kp U               &kp I             &kp O               &kp P                &kp LBKT
-&kp ENTER            &kp A            &kp S            &kp D      &kp F          &kp G                    &kp LEFT  &none     &kp RIGHT  &kp H      &kp J               &kp K             &kp L               &kp SEMI             &kp SQT
-&HRM LEFT_SHIFT TAB  &HRM LEFT_GUI Z  &HRM LEFT_ALT X  &kp C      &kp V          &kp B      &kp C_MUTE              &kp DOWN             &kp N      &HRM RIGHT_SHIFT M  &HRM RCTRL COMMA  &HRM RIGHT_ALT DOT  &HRM RIGHT_GUI FSLH  &HRM RIGHT_SHIFT BACKSPACE
-                                                       &kp LCTRL  &lt 1 PAGE_UP  &kp SPACE                                               &kp SPACE  &lt 2 PAGE_DOWN     &lt 3 DELETE
+&kp ESCAPE           &kp Q            &kp W            &kp E      &kp R          &kp T                              &kp UP                &kp Y      &kp U               &kp I             &kp O               &kp P                &kp LBKT
+&kp ENTER            &kp A            &kp S            &kp D      &kp F          &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J               &kp K             &kp L               &kp SEMI             &kp SQT
+&HRM LEFT_SHIFT TAB  &HRM LEFT_GUI Z  &HRM LEFT_ALT X  &kp C      &kp V          &kp B      &kp C_MUTE              &kp DOWN              &kp N      &HRM RIGHT_SHIFT M  &HRM RCTRL COMMA  &HRM RIGHT_ALT DOT  &HRM RIGHT_GUI FSLH  &HRM RIGHT_SHIFT BACKSPACE
+                                                       &kp LCTRL  &lt 1 PAGE_UP  &kp SPACE                                                &kp SPACE  &lt 2 PAGE_DOWN     &lt 3 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
