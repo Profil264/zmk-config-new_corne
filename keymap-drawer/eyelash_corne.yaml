@@ -38,7 +38,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
   - N
-  - {t: M, h: '$$mdi:apple-keyboard-shift$$'}
+  - M
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, h: RIGHT GUI, s: '?'}
@@ -46,7 +46,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {t: PgUp, h: Lower}
   - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: PgDn, h: Upper}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Layer 3}
   Lower:
@@ -121,7 +121,7 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
