@@ -53,6 +53,7 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
         tap-ms = <30>;
     };
 
@@ -81,6 +82,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Layer_3 {
+            bindings = <&lt 3 A>;
+            key-positions = <43 44>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -99,10 +109,10 @@
         lower_layer {
             display-name = "Lower";
             bindings = <
-&trans     &kp N7        &kp N8        &kp N9        &kp LS(RBKT)  &kp LS(N7)                                  &trans          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp C_PAUSE  &kp INS        &kp HOME       &kp PG_UP
-&trans     &kp N4        &kp N5        &kp N6        &kp RBKT      &kp FSLH                             &trans  &trans  &trans  &kp NUBS         &kp LS(N8)      &kp LS(N9)  &kp DELETE     &kp END        &kp PAGE_DOWN
-&trans     &kp N1        &kp N2        &kp N3        &kp COMMA     &kp PERIOD             &trans                    &trans          &kp LS(NUBS)     &kp LALT        &kp RCTRL   &kp RALT       &kp RGUI       &trans
-                                          &kp N0       &trans        &trans                                                         &kp LS(N0)       &kp F2          &kp F4
+&trans  &kp N7  &kp N8  &kp N9  &kp LS(RBKT)  &kp LS(N7)                    &trans          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp C_PAUSE  &kp INS     &kp HOME  &kp PG_UP
+&trans  &kp N4  &kp N5  &kp N6  &kp RBKT      &kp FSLH              &trans  &trans  &trans  &kp NUBS         &kp LS(N8)      &kp LS(N9)   &kp DELETE  &kp END   &kp PAGE_DOWN
+&trans  &kp N1  &kp N2  &kp N3  &kp COMMA     &kp PERIOD  &trans            &trans          &kp LS(NUBS)     &kp LALT        &kp RCTRL    &kp RALT    &kp RGUI  &trans
+                        &kp N0  &trans        &trans                                        &kp LS(N0)       &kp F2          &kp F4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -111,10 +121,10 @@
         raise_layer {
             display-name = "Upper";
             bindings = <
-&kp GRAVE  &kp LS(N1)             &kp LS(N2)                  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                          &trans                          &kp LS(N6)        &kp RA(N7)          &kp RA(N8)       &kp RA(N9)      &kp RA(N0)      &kp MINUS
-&kp F1     &kp F2                 &kp F3                      &kp F4      &kp F5      &kp F6                     &trans  &trans          &trans          &kp F7            &kp F8              &kp F9           &kp F10         &kp F11         &kp F12
-&trans     &HRM LEFT_GUI RA(NUBS) &HRM LEFT_ALT BACKSLASH    &kp LS(BACKSLASH)  &kp RA(RBKT)  &kp EQUAL    &trans                          &trans          &kp LS(EQUAL)     &kp LALT            &kp RCTRL        &kp RALT        &kp RGUI        &trans
-                                                           &trans        &trans      &trans                                                                   &trans             &trans             &kp C_MENU
+&kp GRAVE  &kp LS(N1)              &kp LS(N2)               &kp LS(N3)         &kp LS(N4)    &kp LS(N5)                    &trans          &kp LS(N6)     &kp RA(N7)  &kp RA(N8)  &kp RA(N9)  &kp RA(N0)  &kp MINUS
+&kp F1     &kp F2                  &kp F3                   &kp F4             &kp F5        &kp F6                &trans  &trans  &trans  &kp F7         &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
+&trans     &HRM LEFT_GUI RA(NUBS)  &HRM LEFT_ALT BACKSLASH  &kp LS(BACKSLASH)  &kp RA(RBKT)  &kp EQUAL   &trans            &trans          &kp LS(EQUAL)  &kp LALT    &kp RCTRL   &kp RALT    &kp RGUI    &trans
+                                                            &trans             &trans        &trans                                        &trans         &trans      &kp C_MENU
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -123,10 +133,10 @@
         layer_3 {
             display-name = "Layer 3";
             bindings = <
-&bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                  &mmv MOVE_UP                     &none        &none       &none           &none  &none  &none
-&bt BT_CLR_ALL  &none            &bootloader     &sys_reset    &studio_unlock &none                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &sys_reset  &studio_unlock  &none  &none  &none
-&none           &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &out OUT_USB  &out OUT_BLE   &kp KP_NUMLOCK  &kp C_MUTE                    &mmv MOVE_DOWN                   &none        &none       &none           &none  &none  &none
-                                                 &trans        &trans         &trans                                                                         &trans       &trans      &trans
+&bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                                  &mmv MOVE_UP                     &none        &none       &none           &none  &none  &none
+&bt BT_CLR_ALL  &none            &bootloader     &sys_reset    &studio_unlock  &none                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &sys_reset  &studio_unlock  &none  &none  &none
+&none           &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &out OUT_USB  &out OUT_BLE    &kp KP_NUMLOCK  &kp C_MUTE                    &mmv MOVE_DOWN                   &none        &none       &none           &none  &none  &none
+                                                 &trans        &trans          &trans                                                                         &trans       &trans      &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
